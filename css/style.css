@@ -1,10 +1,9 @@
-@import url("./reset.css");
+/* GOOGLE FONT */
 
-@import url("./variables.css");
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap');
 
-@import url("./global.css");
 
-@import url("./layout.css");
+/* IMPORT FILES */
 
 @import url("./navbar.css");
 
@@ -12,10 +11,94 @@
 
 @import url("./features.css");
 
-@import url("./code-preview.css");
-
 @import url("./testimonials.css");
 
 @import url("./cta.css");
 
-@import url("./footer.css");
+
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root {
+
+    --clr-bg:#060610;
+
+    --clr-surface:#0d0d1f;
+
+    --clr-glass:rgba(255,255,255,0.04);
+
+    --clr-border:rgba(255,255,255,0.08);
+
+    --clr-neon:#00f5d4;
+
+    --clr-neon2:#7b5ea7;
+
+    --clr-accent:#ff6b6b;
+
+    --clr-text:#e2e8f0;
+
+    --clr-muted:#8892a4;
+
+    --font-display:'Syne',sans-serif;
+
+    --font-body:'DM Sans',sans-serif;
+
+    --radius:16px;
+
+    --transition:0.35s cubic-bezier(0.4,0,0.2,1);
+
+    --shadow-neon:
+        0 0 24px rgba(0,245,212,0.25);
+
+    --shadow-card:
+        0 8px 32px rgba(0,0,0,0.5);
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+*,
+*::before,
+*::after{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    font-family:var(--font-body);
+
+    background:var(--clr-bg);
+
+    color:var(--clr-text);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+}
+
+
+/* =========================
+   GLOBAL SECTION
+========================= */
+
+section{
+
+    position:relative;
+
+    z-index:1;
+}
